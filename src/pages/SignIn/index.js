@@ -3,6 +3,7 @@ import { Link, withRouter } from "react-router-dom";
 import api from "../../services/api";
 import { login } from "../../services/auth";
 import { Form, Container } from "./styles";
+import Title from "../../components/title";
 
 class SignIn extends Component {
   state = {
@@ -44,16 +45,17 @@ class SignIn extends Component {
     return (
       <Container>
         <Form onSubmit={this.handleLogin}>
+          <Title title="Entrar" />
           {this.state.error && <p>{this.state.error}</p>}
           <input
             type="text"
-            placeholder="Username"
+            placeholder="Nome de usuário"
             value={this.state.username}
             onChange={(e) => this.setState({ username: e.target.value })}
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Senha"
             value={this.state.password}
             onChange={(e) => this.setState({ password: e.target.value })}
           />

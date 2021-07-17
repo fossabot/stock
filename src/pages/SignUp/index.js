@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
 import api from "../../services/api";
 import { Form, Container } from "./styles";
+import Title from "../../components/title";
 
 class SignUp extends Component {
   state = {
@@ -30,7 +31,7 @@ class SignUp extends Component {
         this.props.history.push("/");
       } catch (err) {
         this.setState({
-          error: "Ocorreu um problema com o cadastre ou usuário já cadastrado",
+          error: "Ocorreu um problema com o cadastro ou usuário já cadastrado",
         });
       }
     }
@@ -39,34 +40,35 @@ class SignUp extends Component {
     return (
       <Container>
         <Form onSubmit={this.handleRegister}>
+          <Title title="Registro" />
           {this.state.error && <p>{this.state.error}</p>}
           <input
             type="text"
-            placeholder="Firstname"
+            placeholder="Primeiro nome"
             value={this.state.firstname}
             onChange={(e) => this.setState({ firstname: e.target.value })}
           />
           <input
             type="text"
-            placeholder="Lastname"
+            placeholder="Último nome"
             value={this.state.lastname}
             onChange={(e) => this.setState({ lastname: e.target.value })}
           />
           <input
             type="text"
-            placeholder="Username"
+            placeholder="Nome de usuário"
             value={this.state.username}
             onChange={(e) => this.setState({ username: e.target.value })}
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Senha"
             value={this.state.password}
             onChange={(e) => this.setState({ password: e.target.value })}
           />
           <button type="submit">Entrar</button>
           <hr />
-          <Link to="/signup">Registrar</Link>
+          <Link to="/">Retornar para a tela de login</Link>
         </Form>
       </Container>
     );

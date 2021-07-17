@@ -1,1 +1,1 @@
-
+[![Build React Application](https://github.com/leandrocunha526/stock/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/leandrocunha526/stock/actions/workflows/continuous-integration.yml)

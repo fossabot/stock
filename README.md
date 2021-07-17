@@ -1,6 +1,7 @@
 # Stock
 
 [![Build React Application](https://github.com/leandrocunha526/stock/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/leandrocunha526/stock/actions/workflows/continuous-integration.yml) [![License](https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=00000)](LICENSE.md)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fleandrocunha526%2Fstock.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fleandrocunha526%2Fstock?ref=badge_shield)
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -37,3 +38,6 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 ---
 
 Feito com 💜 by Leandro Cunha
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fleandrocunha526%2Fstock.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fleandrocunha526%2Fstock?ref=badge_large)
